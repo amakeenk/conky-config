@@ -1,3 +1,3 @@
 #!/bin/sh -e
 
-conky -c conky.conf >>${TMP}/conky.log 2>&1 &
+conky >>${TMP}/conky.log 2>&1 &
