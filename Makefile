@@ -5,7 +5,7 @@ CONKYDIR ?= /etc/conky
 install:
 	mkdir -p $(CONKYDIR)/scripts
 	install -m0755 run-conky.sh $(BINDIR)/run-conky
-	install -m0664 conky.conf $(CONKYDIR)/conky.conf
+	install -m0644 conky.conf $(CONKYDIR)/conky.conf
 	install -m0755 scripts/check_update.sh $(CONKYDIR)/scripts/check_update.sh
 	install -m0755 scripts/check_update_vs_code.sh $(CONKYDIR)/scripts/check_update_vs_code.sh
 	install -m0755 scripts/check_update_yandex_browser.sh $(CONKYDIR)/scripts/check_update_yandex_browser.sh
