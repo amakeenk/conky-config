@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/bash
 
 used_str=$(yandex-disk status | grep Занято | cut -d":" -f2 | tr -d " ")
 total_str=$(yandex-disk status | grep Всего | cut -d":" -f2 | tr -d " ")
